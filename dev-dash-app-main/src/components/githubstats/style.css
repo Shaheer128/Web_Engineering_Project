@@ -1,0 +1,208 @@
+.form{
+/* padding-left: 22%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.form input{
+    padding: 12px 16px;
+        /* width: 100%; */
+        /* max-width: 700px; */
+        width: 550px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: 0.3s ease;
+        outline: none;
+        background-color: #f9fafb;
+        color: #1a202c;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);  
+}
+.form input:focus {
+    border-color:rgba(164, 185, 255, 0.795);
+    box-shadow: 0 0 0 3px rgba(164, 185, 255, 0.795);
+}
+
+.form button{
+    /* padding: 12px 16px; */
+    margin-left: 15px;
+    /* border: 2px solid #e2e8f0; */
+        /* border-radius: 8px; */
+
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(110, 142, 251, 0.3);
+}
+
+.form button:hover {
+    transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(110, 142, 251, 0.5);
+}
+
+.github-stats{
+    margin: 70px auto;
+    background-color: #1f1f1f;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 15px;
+            max-width: 800px;
+        /* margin: 40px auto; */
+        /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); */
+        box-shadow: 0 6px 18px rgba(255, 255, 255, 0.5);
+}
+
+.contribution-div{
+    /* border: 2px solid red; */
+    /* padding-left: 5%; */
+}
+
+.title h3{
+    /* border: 2px solid red; */
+    text-align: center;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    /* background-color: #2d3748; */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    /* Blur background */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* semi-transparent black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup {
+    padding: 12px 24px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    max-width: 300px;
+    text-align: center;
+    animation: fadeInSlideUp 0.4s ease forwards;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth popup animation */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* //mobile */
+@media (max-width: 390px) {
+
+    .form {
+        /* margin: auto; */
+        /* border: 2px solid red; */
+        /* padding-left: 50px; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+.github-stats img {
+    width: 80px;
+    height: 80px;
+}
+    .form input {
+        width: 60%;
+        padding: 8px ;
+        margin-right: 15px;
+        /* border: 2px solid red; */
+    }
+    .form button{
+        margin-left: unset;
+        padding: 8px 14px;
+    }
+.github-stats {
+    /* border: 2px solid red; */
+    margin-top: 45px ;
+}
+}
+
+
+@media screen and (max-width:320px) {
+    .form input{
+        /* width: 100px; */
+    }
+
+        .github-stats img {
+            width: 80px;
+            height: 80px;
+        }
+    .github-stats{
+        max-width: 200px;
+        margin: 80px auto;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .form input {
+        /* width: 100px; */
+    }
+
+    .github-stats img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .github-stats {
+        max-width: 220px;
+        margin: 80px auto;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .form input {
+        /* width: 100px; */
+    }
+
+    .github-stats {
+        max-width: 220px;
+        margin: 80px auto;
+    }
+}

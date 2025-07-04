@@ -1,0 +1,131 @@
+/* CodeEditor.css */
+
+.editor-widget-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.editor-widget {
+  /* width: 500px; */
+  max-width: 500px;
+  /* max-height: 450px; */
+  height: 410px;
+  /* Set max height */
+  /* overflow-y: auto; */
+  margin: 70px 0;
+  /* background-color: #1f1f1f; */
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  /* box-shadow: 0 6px 18px rgba(255, 255, 255, 0.5); */
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.code-editor-wrapper {
+  background-color: #1e1e2f;
+  overflow-y: auto;
+  color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  max-width: 800px;
+  /* max-height: 370px; */
+  max-height: 380px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.editor-select {
+  background-color: #2d2d44;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.save-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #2563eb;
+}
+
+.saved-snippets {
+  margin-top: 20px;
+}
+
+.saved-snippets-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.snippet-card {
+  background-color: #2c2c3a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.snippet-language {
+  display: block;
+  margin-bottom: 6px;
+  color: #93c5fd;
+}
+
+.snippet-code {
+  white-space: pre-wrap;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 320px) {
+  .editor-widget {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .editor-widget {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .editor-widget {
+    width: 220px;
+  }
+  .editor-select {
+    width: 80px;
+    height: 50px;
+    font-size: 10px;
+  }
+  .save-button {
+    width: 50px;
+    font-size: 10px;
+  }
+}
