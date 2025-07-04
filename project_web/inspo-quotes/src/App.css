@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  transition: background 0.3s;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #0077ff;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: 2px solid #0077ff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #0077ff;
+}
+
+.dark .theme-toggle {
+  background: #222;
+  color: #fff;
+  border-color: #555;
+}
+
+.quote-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.dark .quote-box {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.quote-author {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #777;
+}
+
+.quote-category {
+  margin: 5px 0 15px;
+  font-size: 0.9rem;
+  color: #00bfff;
+  font-weight: bold;
+}
+
+.like-btn {
+  background: hotpink;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.new-quote-btn {
+  background: dodgerblue;
+  border: none;
+  padding: 12px 22px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.liked-section {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.liked-quotes {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.dark .liked-quotes {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+.footer {
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: gray;
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
