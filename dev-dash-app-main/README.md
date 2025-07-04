@@ -4,7 +4,6 @@
 
 *A Multi-Widget Developer Dashboard*  
 
-![Demo GIF](https://media.tenor.com/_c57eQ30AVoAAAAM/anime.gif) 
 
 🚀 **DevDash** is a responsive React dashboard built with **TypeScript** and **Redux Toolkit**, designed to boost productivity with integrated tools:  
 
@@ -21,15 +20,12 @@
 - APIs: GitHub, OpenWeatherMap  
 
 ### 🚀 Quick Start  
-- git clone https://github.com/HamadKhanhehe/dev-dash-app.git
+- git clone https://github.com/Shaheer128/Web_Engineering_Project/tree/main/dev-dash-app-main 
 - npm install
 - npm run dev
 
 🎯 Why This Project?
-- Demonstrates clean Redux state management with async thunks.
 
 - Implements TypeScript interfaces for API responses.
 
 - Responsive design tested on mobile, tablet, and desktop.
-
-👉 <h1>Explore the code and contribute! Feedback and PRs are welcome.</h1>
